@@ -12,7 +12,7 @@ public class TestService {
 	private TestDao testDao;
 
 	public String getText() {
-		int count = testDao.getNowDate();
+		String count = testDao.getNowDate();
 		System.out.println(count);
 		return "test";
 	}

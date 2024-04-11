@@ -14,7 +14,7 @@ public class TestDao extends SqlSessionDaoSupport {
 		super.setSqlSessionTemplate(sqlSessionTemplate);
 	}
 
-	public int getNowDate() {
+	public String getNowDate() {
 		return getSqlSession().selectOne("getNowDate");
 	}
 
