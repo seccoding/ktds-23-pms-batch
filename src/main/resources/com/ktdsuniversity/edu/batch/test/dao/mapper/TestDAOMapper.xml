@@ -4,12 +4,10 @@
 
 <mapper namespace="com.ktdsuniversity.edu.bbs.dao.BoardDAO">
 	
-	<select id="getBoardAllCount"
-	        resultType="_int">
-		SELECT COUNT(B.ID)
-          FROM BOARD B
-         INNER JOIN MEMBERS M
-            ON M.EMAIL = B.EMAIL
+	<select id="getNowDate"
+	        resultType="string">
+		SELECT SYSDATE
+		  FROM DUAL
 	</select>
 	
 </mapper>

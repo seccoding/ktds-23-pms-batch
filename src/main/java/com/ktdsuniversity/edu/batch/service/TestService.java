@@ -10,11 +10,11 @@ public class TestService {
 
 	@Autowired
 	private TestDao testDao;
-	
+
 	public String getText() {
-		int count = testDao.getBoardAllCount();
+		int count = testDao.getNowDate();
 		System.out.println(count);
 		return "test";
 	}
-	
+
 }
