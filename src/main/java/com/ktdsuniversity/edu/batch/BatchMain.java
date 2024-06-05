@@ -18,8 +18,8 @@ import org.quartz.impl.StdSchedulerFactory;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
+import com.ktdsuniversity.edu.batch.jobs.LogoutJob;
 import com.ktdsuniversity.edu.batch.jobs.TestJob;
-import com.ktdsuniversity.edu.batch.jobs.TestJob2;
 
 public class BatchMain {
 
@@ -30,8 +30,9 @@ public class BatchMain {
 		Scheduler scheduler = makeScheduler();
 
 		if (scheduler != null) {
-			addSchedule(scheduler, TestJob.class);
-			addSchedule(scheduler, TestJob2.class);
+			addSchedule(scheduler, LogoutJob.class);
+//			addSchedule(scheduler, TestJob.class);
+//			addSchedule(scheduler, TestJob2.class);
 
 			start(scheduler);
 		}

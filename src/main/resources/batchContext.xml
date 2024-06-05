@@ -15,9 +15,9 @@
     <bean id="dataSource"
           class="org.apache.commons.dbcp.BasicDataSource">
         <property name="driverClassName" value="oracle.jdbc.driver.OracleDriver" />
-        <property name="url" value="jdbc:oracle:thin:@mcjang.iptime.org:1521:XE" />
+        <property name="url" value="jdbc:oracle:thin:@43.202.29.221:1521:XE" />
         <property name="username" value="PMS" />
-        <property name="password" value="PMS" />
+        <property name="password" value="pms" />
     </bean>
 
     <bean id="transactionManager"
